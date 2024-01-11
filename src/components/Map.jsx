@@ -1,4 +1,4 @@
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   MapContainer,
   TileLayer,
@@ -12,19 +12,18 @@ import { useEffect, useState } from "react";
 import { useCities } from "../context/citiesContext";
 import { useGeolocation } from "../hooks/useGeolocation";
 import Button from "./Button";
+import {useUrlPosition} from "../hooks/useUrlPosition";
 
 function Map() {
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
-  const [searchParams, setSearchParams] = useSearchParams();
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
     getPosition,
   } = useGeolocation();
 
-  const mapLat = searchParams.get("lat");
-  const mapLng = searchParams.get("lng");
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(
     function () {
@@ -33,16 +32,22 @@ function Map() {
     [mapLat, mapLng]
   );
 
-    useEffect(function () {
+  useEffect(
+    function () {
       if (geolocationPosition)
-      setMapPosition([geolocationPosition.lat, geolocationPosition.lng])
-    },[geolocationPosition])
-console.log(geolocationPosition)
+        setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
+    },
+    [geolocationPosition]
+  );
+  console.log(geolocationPosition);
   return (
     <div className={styles.mapContainer}>
-{ !geolocationPosition &&  <Button type="position" onClick={getPosition}>{isLoadingPosition ? "Loading..." : "use Your Posation"}</Button>
-} 
-     <MapContainer
+      {!geolocationPosition && (
+        <Button type="position" onClick={getPosition}>
+          {isLoadingPosition ? "Loading..." : "use Your Posation"}
+        </Button>
+      )}
+      <MapContainer
         center={mapPosition}
         // center={[mapLat, mapLng]}
         zoom={6}
@@ -56,7 +61,7 @@ console.log(geolocationPosition)
         {cities.map((city) => (
           <Marker
             position={[city.position.lat, city.position.lng]}
-            key={city.position.lat}
+            key={city.id}
           >
             <Popup>
               <span>{city.emoji}</span>
