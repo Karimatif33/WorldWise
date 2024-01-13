@@ -1,42 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": 17806751
-    },
-    {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": 98443197
-    },
-    {
       "cityName": "Faro",
       "country": "Portugal",
       "emoji": "🇵🇹",
@@ -85,64 +49,52 @@
       "id": 98443198
     },
     {
-      "cityName": "Kanjiza",
-      "country": "Serbia",
-      "emoji": "🇷🇸",
-      "date": "2024-01-11T05:51:36.439Z",
+      "cityName": "Kafr Sa‘d",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-01-13T04:50:38.661Z",
       "notes": "",
       "position": {
-        "lat": "46.10370875598026",
-        "lng": "19.951171875000004"
+        "lat": "31.353636941500987",
+        "lng": "31.530761718750004"
       },
       "id": 98443199
     },
     {
-      "cityName": "Pysznica",
-      "country": "Poland",
-      "emoji": "🇵🇱",
-      "date": "2024-01-11T05:51:36.439Z",
+      "cityName": "Bilqas",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-01-13T04:50:45.564Z",
       "notes": "",
       "position": {
-        "lat": "50.597186230587035",
-        "lng": "22.104492187500004"
+        "lat": "31.42749129448044",
+        "lng": "31.547241210937504"
       },
       "id": 98443200
     },
     {
-      "cityName": "Pysznica",
-      "country": "Poland",
-      "emoji": "🇵🇱",
-      "date": "2024-01-11T06:07:16.526Z",
-      "notes": "a",
+      "cityName": "Dumyat Al Gadida",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-01-13T04:50:48.876Z",
+      "notes": "",
       "position": {
-        "lat": "50.597186230587035",
-        "lng": "22.104492187500004"
+        "lat": "31.429834925591422",
+        "lng": "31.68045043945313"
       },
       "id": 98443201
     },
     {
-      "cityName": "Beiarn",
-      "country": "Norway",
-      "emoji": "🇳🇴",
-      "date": "2024-01-11T06:07:34.842Z",
+      "cityName": "Gamasa",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-01-13T04:50:52.445Z",
       "notes": "",
       "position": {
-        "lat": "67.04173496919447",
-        "lng": "14.655761718750002"
+        "lat": "31.43906240360189",
+        "lng": "31.54458045959473"
       },
       "id": 98443202
-    },
-    {
-      "cityName": "Moncassin",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-01-11T06:09:36.609Z",
-      "notes": "",
-      "position": {
-        "lat": "43.45291889355465",
-        "lng": "0.46142578125000006"
-      },
-      "id": 98443203
     }
   ]
 }

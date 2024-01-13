@@ -39,7 +39,6 @@ function Map() {
     },
     [geolocationPosition]
   );
-  console.log(geolocationPosition);
   return (
     <div className={styles.mapContainer}>
       {!geolocationPosition && (
@@ -87,7 +86,6 @@ function DetectClick() {
 
   useMapEvent({
     click: (e) => {
-      console.log(e.latlng.lat);
       navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
     },
   });
